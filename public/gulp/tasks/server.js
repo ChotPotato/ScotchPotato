@@ -4,5 +4,4 @@ var config = require('../config').server;
 
 gulp.task('server', function() {
   connect.server(config.settings);
-
 });
