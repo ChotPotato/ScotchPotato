@@ -1,6 +1,5 @@
 const AppDispatcher = require('../dispatchers/AppDispatcher');
 const Constants = require('../constants/AppConstants');
-const Rooms = require('../entities/Rooms');
 
 module.exports = {
 
