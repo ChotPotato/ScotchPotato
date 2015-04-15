@@ -4,6 +4,8 @@ const RoomActions = require('../actions/RoomActionCreator');
 const PageHeader = require('react-bootstrap/lib/PageHeader');
 const ListGroup = require('react-bootstrap/lib/ListGroup');
 const Room = require('./Room.jsx');
+const Router = require('react-router');
+const Link = Router.Link;
 
 let RoomList = React.createClass({
   getInitialState() {
@@ -33,6 +35,7 @@ let RoomList = React.createClass({
         <ListGroup>
           {rooms}
         </ListGroup>
+        <Link className="btn btn-primary" to="newroom">Create Room</Link>
       </div>
     );
   }
